@@ -2,21 +2,21 @@
 
 ##### 实验报告1项目信息地址：
 
-[项目地址](https://github.com/TomHardyWu/2018118148_Android/tree/master/%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A/FirstWork)
+[项目地址](https://github.com/TomHardyWu/2018118148_Android/tree/master/01FirstHomeWork/FirstWork)
 
 ##### 实验报告1文档信息地址：
 
-[文档地址](https://github.com/TomHardyWu/2018118148_Android/blob/master/%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A1.md)
+[文档地址](https://github.com/TomHardyWu/2018118148_Android/blob/master/01FirstHomeWork/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A1.md)
 
 ### 2.探求安卓手机各种操作，活动的生命周期调用
 
 ##### 实验报告2项目信息地址：
 
-[项目地址](https://github.com/TomHardyWu/2018118148_Android/tree/master/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BD%9C%E4%B8%9A/SecondWork)
+[项目地址](https://github.com/TomHardyWu/2018118148_Android/tree/master/02SecondHomeWork/SecondWork)
 
 ##### 实验报告2文档信息地址：
 
-[文档地址](https://github.com/TomHardyWu/2018118148_Android/blob/master/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BD%9C%E4%B8%9A/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A2.md)
+[文档地址](https://github.com/TomHardyWu/2018118148_Android/blob/master/02SecondHomeWork/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A2.md)
 
 ### 3.探求四种不同的启动模式：standard、singleTop、singleTask、singleInstance（以按钮为例）
 
