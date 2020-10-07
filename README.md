@@ -32,11 +32,11 @@
 
 ##### 实验报告4项目信息地址：
 
-[项目地址]()
+[项目地址](https://github.com/TomHardyWu/2018118148_Android/tree/master/04ForthHomeWork/ForthWork)
 
 ##### 实验报告4文档信息地址：
 
-[文档地址]()
+[文档地址](https://github.com/TomHardyWu/2018118148_Android/blob/master/04ForthHomeWork/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A4.md)
 
 ### 5.掌握RecyclerView的使用以及EditText的监听事件
 
