@@ -1,4 +1,4 @@
-### 1.组件的应用及布局
+### 1.组件的应用及布局。
 
 ##### 实验报告1项目信息地址：
 
@@ -8,7 +8,7 @@
 
 [文档地址](https://github.com/TomHardyWu/2018118148_Android/blob/master/01FirstHomeWork/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A1.md)
 
-### 2.探求安卓手机各种操作，活动的生命周期调用
+### 2.探求安卓手机各种操作，活动的生命周期调用。
 
 ##### 实验报告2项目信息地址：
 
@@ -18,7 +18,7 @@
 
 [文档地址](https://github.com/TomHardyWu/2018118148_Android/blob/master/02SecondHomeWork/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A2.md)
 
-### 3.探求四种不同的启动模式：standard、singleTop、singleTask、singleInstance（以按钮为例）
+### 3.探求四种不同的启动模式：standard、singleTop、singleTask、singleInstance（以按钮为例）。
 
 ##### 实验报告3项目信息地址：
 
@@ -38,7 +38,7 @@
 
 [文档地址](https://github.com/TomHardyWu/2018118148_Android/blob/master/04ForthHomeWork/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A4.md)
 
-### 5.掌握RecyclerView的使用以及EditText的监听事件
+### 5.掌握RecyclerView的使用以及EditText的监听事件。
 
 ##### 实验报告5项目信息地址：
 
@@ -47,3 +47,13 @@
 ##### 实验报告5文档信息地址：
 
 [文档地址](https://github.com/TomHardyWu/2018118148_Android/blob/master/05FifthHomeWork/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A5.md)
+
+### 5.发送自定义广播，掌握广播机制。
+
+##### 实验报告5项目信息地址：
+
+[项目地址]()
+
+##### 实验报告5文档信息地址：
+
+[文档地址]()
