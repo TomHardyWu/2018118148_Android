@@ -50,13 +50,20 @@
 
 ### 6.发送自定义广播，掌握广播机制。
 
-##### 实验报告5项目信息地址：
+##### 实验报告6项目信息地址：
 
 [项目地址](https://github.com/TomHardyWu/2018118148_Android/tree/master/06SixthHomeWork/SixthWork)
 
-##### 实验报告5文档信息地址：
+##### 实验报告6文档信息地址：
 
 [文档地址](https://github.com/TomHardyWu/2018118148_Android/blob/master/06SixthHomeWork/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A6.md)
 
 ### 7.掌握如何将数据存储到文件中。
 
+##### 实验报告7项目信息地址：
+
+[项目地址](https://github.com/TomHardyWu/2018118148_Android/tree/master/07SeventhHomeWork/SeventhWork)
+
+##### 实验报告7文档信息地址：
+
+[文档地址](https://github.com/TomHardyWu/2018118148_Android/blob/master/07SeventhHomeWork/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A7.md)
