@@ -56,4 +56,5 @@
 
 ##### 实验报告5文档信息地址：
 
-[文档地址]()
+[文档地址](https://github.com/TomHardyWu/2018118148_Android/blob/master/06SixthHomeWork/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A6.md)
+
