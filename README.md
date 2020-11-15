@@ -48,7 +48,7 @@
 
 [文档地址](https://github.com/TomHardyWu/2018118148_Android/blob/master/05FifthHomeWork/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A5.md)
 
-### 5.发送自定义广播，掌握广播机制。
+### 6.发送自定义广播，掌握广播机制。
 
 ##### 实验报告5项目信息地址：
 
