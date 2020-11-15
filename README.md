@@ -67,3 +67,14 @@
 ##### 实验报告7文档信息地址：
 
 [文档地址](https://github.com/TomHardyWu/2018118148_Android/blob/master/07SeventhHomeWork/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A7.md)
+
+### 8.掌握通知的基本用法。
+
+##### 实验报告8项目信息地址：
+
+[项目地址](https://github.com/TomHardyWu/2018118148_Android/tree/master/08EighthHomeWork/EighthWork)
+
+##### 实验报告8文档信息地址
+
+[文档地址](https://github.com/TomHardyWu/2018118148_Android/blob/master/08EighthHomeWork/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A8.md)
+
