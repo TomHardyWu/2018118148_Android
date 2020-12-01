@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">2018118148wulimo</string>
+    <string name="start">Start Service</string>
+    <string name="stop">Stop Service</string>
+</resources>
