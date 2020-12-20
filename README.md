@@ -82,39 +82,49 @@
 
 ##### 实验报告9项目信息地址：
 
-[项目地址]()
+[项目地址](https://github.com/TomHardyWu/2018118148_Android/tree/master/09NinthHomeWork/NinthWork)
 
 ##### 实验报告9文档信息地址
 
-[文档地址]()
+[文档地址](https://github.com/TomHardyWu/2018118148_Android/blob/master/09NinthHomeWork/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A9.md)
 
 ### 10.掌握异步任务的隐含子线程程序框架。
 
 ##### 实验报告10项目信息地址：
 
-[项目地址]()
+[项目地址](https://github.com/TomHardyWu/2018118148_Android/tree/master/10TenthHomeWork/TenthWork)
 
 ##### 实验报告10文档信息地址
 
-[文档地址]()
+[文档地址](https://github.com/TomHardyWu/2018118148_Android/blob/master/10TenthHomeWork/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A10.md)
 
 ### 11.掌握服务：启动和停止服务，服务代码运行在显式子线程。
 
 ##### 实验报告11项目信息地址：
 
-[项目地址]()
+[项目地址](https://github.com/TomHardyWu/2018118148_Android/tree/master/11ElethHomeWork/ElethWork)
 
 ##### 实验报告11文档信息地址
 
-[文档地址]()
+[文档地址](https://github.com/TomHardyWu/2018118148_Android/blob/master/11ElethHomeWork/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A11.md)
 
 ### 12.掌握子服务的绑定，子服务代码运行在异步任务。
 
 ##### 实验报告12项目信息地址：
 
-[项目地址]()
+[项目地址](https://github.com/TomHardyWu/2018118148_Android/tree/master/12TwethHomeWork/TwethWork)
 
 ##### 实验报告12文档信息地址
 
-[文档地址]()
+[文档地址](https://github.com/TomHardyWu/2018118148_Android/blob/master/12TwethHomeWork/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A12.md)
+
+### 13.大作业，音乐播放器MusicPlayer
+
+##### 大作业项目地址：
+
+[项目地址](https://github.com/TomHardyWu/2018118148_Android/tree/master/13MusicPlayer/MusicPlayer)
+
+##### 大作业文档地址：
+
+[文档地址](https://github.com/TomHardyWu/2018118148_Android/blob/master/13MusicPlayer/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A13.md)
 
