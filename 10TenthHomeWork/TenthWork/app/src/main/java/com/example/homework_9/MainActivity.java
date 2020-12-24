@@ -39,15 +39,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         protected void onPreExecute() {
             super.onPreExecute();
         }
-
-        //第二个方法，在子线程中运行，在doPreExecute方法执行完后运行
         @Override
         protected String doInBackground(Integer... params) {
             for(int i = 0; i < 100; i++){
                 progressBar.setProgress(i);
                 publishProgress(i);
-                //每次调用都再开辟一个子线程休息params[0]时间,这里的param来自
-                // DownloadTask对象的.execute()方法中的参数
                 try {
                     Thread.sleep(params[0]);
                 } catch (InterruptedException e) {
@@ -56,16 +52,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             return "Success";
         }
-
-        //第三个方法，每次调用publishProgress方法时调用，传过来的参数在values中接收
-        //该方法运行在主线程，可以对界面进行修改
         @Override
         protected void onProgressUpdate(Integer... values) {
             textContent.setText(values[0]+"%");
             super.onProgressUpdate(values);
         }
 
-        //doInBackground结束时触发，result为doInBackground的return值
+        //doInBackground最后开始运行，result为doInBackground的return值
         @Override
         protected void onPostExecute(String result) {
             setTitle(result);
