@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     class DownloadTask extends AsyncTask<Integer, Integer, String>{
-        //第一个执行方法，后台任务开始执行前调用
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
