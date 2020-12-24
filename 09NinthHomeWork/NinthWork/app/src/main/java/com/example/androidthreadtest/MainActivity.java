@@ -10,13 +10,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
     public static final int UPDATE_TEXT = 1;
-
     private TextView text;
-
     private Handler handler = new Handler() {
-
         public void handleMessage(Message msg) {
             switch (msg.what) {
                 case UPDATE_TEXT:
@@ -43,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     public void run() {
                         Message message = new Message();
                         message.what = UPDATE_TEXT;
-                        handler.sendMessage(message); // 将Message对象发送出去
+                        handler.sendMessage(message);
                     }
                 }).start();
                 break;
