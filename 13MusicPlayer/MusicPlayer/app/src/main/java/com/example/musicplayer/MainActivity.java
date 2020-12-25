@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     List<LocalMusicBean>mDatas;
     private LocalMusicAdapter adapter;
     int currnetPlayPosition = -1;
-    //    记录暂停音乐时进度条的位置
     int currentPausePositionInSong = 0;
     MediaPlayer mediaPlayer;
     @Override
@@ -41,15 +40,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initView();
         mediaPlayer = new MediaPlayer();
         mDatas = new ArrayList<>();
-//     创建适配器对象
         adapter = new LocalMusicAdapter(this, mDatas);
         musicRv.setAdapter(adapter);
-//        设置布局管理器
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         musicRv.setLayoutManager(layoutManager);
-//        加载本地数据源
         loadLocalMusicData();
-//        设置每一项的点击事件
         setEventListener();
         if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(MainActivity.this, new String[]{ Manifest.permission. WRITE_EXTERNAL_STORAGE }, 1);
@@ -60,7 +55,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void setEventListener() {
-        /* 设置每一项的点击事件*/
         adapter.setOnItemClickListener(new LocalMusicAdapter.OnItemClickListener() {
             @Override
             public void OnItemClick(View view, int position) {
@@ -72,14 +66,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void playMusicInMusicBean(LocalMusicBean musicBean) {
-        /*根据传入对象播放音乐*/
-        //设置底部显示的歌手名称和歌曲名
         singerTv.setText(musicBean.getSinger());
         songTv.setText(musicBean.getSong());
         stopMusic();
-//                重置多媒体播放器
         mediaPlayer.reset();
-//                设置新的播放路径
         try {
             mediaPlayer.setDataSource(musicBean.getPath());
             String albumArt = musicBean.getAlbumArt();
@@ -93,15 +83,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             e.printStackTrace();
         }
     }
-
-    /*
-     * 点击播放按钮播放音乐，或者暂停从新播放
-     * 播放音乐有两种情况：
-     * 1.从暂停到播放
-     * 2.从停止到播放
-     * */
     private void playMusic() {
-        /* 播放音乐的函数*/
         if (mediaPlayer!=null&&!mediaPlayer.isPlaying()) {
             if (currentPausePositionInSong == 0) {
                 try {
@@ -112,7 +94,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     e.printStackTrace();
                 }
             }else{
-//                从暂停到播放
                 mediaPlayer.seekTo(currentPausePositionInSong);
                 mediaPlayer.start();
             }
@@ -120,7 +101,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
     private void pauseMusic() {
-        /* 暂停音乐的函数*/
         if (mediaPlayer!=null&&mediaPlayer.isPlaying()) {
             currentPausePositionInSong = mediaPlayer.getCurrentPosition();
             mediaPlayer.pause();
@@ -128,7 +108,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
     private void stopMusic() {
-        /* 停止音乐的函数*/
         if (mediaPlayer!=null) {
             currentPausePositionInSong = 0;
             mediaPlayer.pause();
@@ -146,14 +125,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void loadLocalMusicData() {
-        /* 加载本地存储当中的音乐mp3文件到集合当中*/
-//        1.获取ContentResolver对象
         ContentResolver resolver = getContentResolver();
-//        2.获取本地音乐存储的Uri地址
         Uri uri = MediaStore.Audio.Media.INTERNAL_CONTENT_URI;
-//        3 开始查询地址
         Cursor cursor = resolver.query(uri, null, null, null, null);
-//        4.遍历Cursor
         int id = 0;
         while (cursor.moveToNext()) {
             String song = cursor.getString(cursor.getColumnIndex(MediaStore.Audio.Media.TITLE));
@@ -165,14 +139,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             long duration = cursor.getLong(cursor.getColumnIndex(MediaStore.Audio.Media.DURATION));
             SimpleDateFormat sdf = new SimpleDateFormat("mm:ss");
             String time = sdf.format(new Date(duration));
-//          获取专辑图片主要是通过album_id进行查询
             String album_id = cursor.getString(cursor.getColumnIndex(MediaStore.Audio.Media.ALBUM_ID));
             String albumArt = getAlbumArt(album_id);
-//            将一行当中的数据封装到对象当中
             LocalMusicBean bean = new LocalMusicBean(sid, song, singer, album, time, path,albumArt);
             mDatas.add(bean);
         }
-//        数据源变化，提示适配器更新
         adapter.notifyDataSetChanged();
     }
 
@@ -193,7 +164,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return album_art;
     }
     private void initView() {
-        /* 初始化控件的函数*/
         nextIv = findViewById(R.id.local_music_bottom_iv_next);
         playIv = findViewById(R.id.local_music_bottom_iv_play);
         lastIv = findViewById(R.id.local_music_bottom_iv_last);
@@ -229,15 +199,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.local_music_bottom_iv_play:
                 if (currnetPlayPosition == -1) {
-//                    并没有选中要播放的音乐
                     Toast.makeText(this,"请选择想要播放的音乐",Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if (mediaPlayer.isPlaying()) {
-//                    此时处于播放状态，需要暂停音乐
                     pauseMusic();
                 }else {
-//                    此时没有播放音乐，点击开始播放音乐
                     playMusic();
                 }
                 break;
