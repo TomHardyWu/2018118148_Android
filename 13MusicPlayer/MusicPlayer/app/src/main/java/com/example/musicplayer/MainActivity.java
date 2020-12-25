@@ -28,11 +28,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageView nextIv,playIv,lastIv,albumIv;
     TextView singerTv,songTv;
     RecyclerView musicRv;
-    //    数据源
     List<LocalMusicBean>mDatas;
     private LocalMusicAdapter adapter;
-
-    //    记录当前正在播放的音乐的位置
     int currnetPlayPosition = -1;
     //    记录暂停音乐时进度条的位置
     int currentPausePositionInSong = 0;

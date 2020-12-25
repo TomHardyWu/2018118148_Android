@@ -1,13 +1,13 @@
 package com.example.musicplayer;
 public class LocalMusicBean {
 
-    private String id; //歌曲id
-    private String song; //歌曲名称
-    private String singer; //歌手名称
-    private String album; //专辑名称
-    private String duration; //歌曲时长
-    private String path; //歌曲路径
-    private String albumArt;  //专辑地址
+    private String id; 
+    private String song; 
+    private String singer;
+    private String album; 
+    private String duration; 
+    private String path;
+    private String albumArt;
 
     public LocalMusicBean() {
     }
