@@ -3,13 +3,11 @@ package com.example.fifthhomework;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-
 import android.Manifest;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.content.pm.PackageManager;
-
 import android.os.Bundle;
 import android.os.IBinder;
 import android.view.View;
