@@ -25,7 +25,6 @@ public class DownloadService extends Service {
             getNotificationManager().notify(1, getNotification("Downloading...",
                     progress));
         }
-
         @Override
         public void onSuccess() {
             downloadTask = null;
@@ -35,7 +34,6 @@ public class DownloadService extends Service {
             Toast.makeText(DownloadService.this, "Download Success",
                     Toast.LENGTH_SHORT).show();
         }
-
         @Override
         public void onFailed() {
             downloadTask = null;
